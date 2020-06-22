@@ -28,7 +28,7 @@ jobs:
         filename: .env
       run: |
         echo "before"
-        ls
+        ls -la
         echo "HELLO World!" > ".txt"
         echo "after"
-        ls
+        ls -la
