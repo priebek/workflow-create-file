@@ -29,6 +29,9 @@ jobs:
       run: |
         echo "before"
         ls
-        echo "HELLO World!" > $filename
+        echo "HELLO World!" > file.env
         echo "after"
+        ls
+        mv file.env .env
+        echo "rename"
         ls
