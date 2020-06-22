@@ -27,6 +27,6 @@ jobs:
       run: |
         echo "before"
         ls
-        echo "HELLO World!" > .env
+        echo "HELLO World!" > ".env"
         echo "after"
         ls
