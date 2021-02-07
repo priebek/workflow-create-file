@@ -38,7 +38,7 @@ jobs:
       
     - name: Run a one-line script
       run: |
-        cd /usr/local/lib/android/sdk/build-tools
+        cd /usr/local/lib/android/sdk/build-tools/30.0.3
         ls
 
     - name: Test ZipAlign
