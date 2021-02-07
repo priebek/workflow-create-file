@@ -43,7 +43,7 @@ jobs:
 
     - name: Test ZipAlign
       run: |
-        /usr/local/lib/android/sdk/build-tools/30.0.3/zipalign.exe
+        /usr/local/lib/android/sdk/build-tools/30.0.3/zipalign
     - name: Test ApkSigner
       run: |
-        /usr/local/lib/android/sdk/build-tools/30.0.3/apksigner.bat
+        /usr/local/lib/android/sdk/build-tools/30.0.3/apksigner
