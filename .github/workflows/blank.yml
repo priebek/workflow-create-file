@@ -15,10 +15,6 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    # Runs a single command using the runners shell
-    - name: Run a one-line script
-      run: echo Hello, world!
-
     # Runs a set of commands using the runners shell
     - name: Run a multi-line script
       env:
@@ -29,3 +25,18 @@ jobs:
         echo "HELLO World!" > ".txt"
         echo "after"
         ls -la
+
+    - name: Setup Android SDK
+      uses: android-actions/setup-android@v2
+      
+    - name: Run a one-line script
+      run: |
+        cd /Users/runner/Library/Android/sdk
+        ls
+
+    - name: Test ZipAlign
+      run: |
+        zipalign.exe
+    - name: Test ApkSigner
+      run: |
+        apksigner.bat
