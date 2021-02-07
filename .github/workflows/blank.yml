@@ -38,12 +38,12 @@ jobs:
       
     - name: Run a one-line script
       run: |
-        cd /usr/local/lib/android/sdk/build-tools/30.0.3
+        cd /Users/runner/Library/Android/sdk/build-tools/30.0.3
         ls
 
     - name: Test ZipAlign
       run: |
-        /usr/local/lib/android/sdk/build-tools/30.0.3/zipalign
+        /Users/runner/Library/Android/sdk/build-tools/30.0.3/zipalign
     - name: Test ApkSigner
       run: |
-        /usr/local/lib/android/sdk/build-tools/30.0.3/apksigner
+        /Users/runner/Library/Android/sdk/build-tools/30.0.3/apksigner
